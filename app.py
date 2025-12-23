@@ -78,7 +78,7 @@ if use_dates:
     hosp_vis = st.sidebar.date_input("Hastaneye Geliş Tarihi (hosp_vis)", value=date(2020, 1, 2))
 
 st.sidebar.markdown("---")
-st.sidebar.markingdown("##### ✈️ Seyahat ve Geçmiş")
+st.sidebar.markdown("##### ✈️ Seyahat ve Geçmiş")
 vis_wuhan = st.sidebar.radio("Wuhan'ı ziyaret etti mi? (vis_wuhan)", [0, 1], format_func=lambda x: "Evet" if x == 1 else "Hayır")
 from_wuhan = st.sidebar.radio("Wuhan'dan mı geldi? (from_wuhan)", [0, 1], format_func=lambda x: "Evet" if x == 1 else "Hayır")
 recov = st.sidebar.radio("İyileşme durumu (recov)", [0, 1], index=0, format_func=lambda x: "İyileşti" if x == 1 else "Bilinmiyor/Hayır")
